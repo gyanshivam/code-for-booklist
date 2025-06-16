@@ -2,6 +2,7 @@ import "./App.css";
 
 export default function Book({ id, img, title, author, getBook, index }) {
   const getOneBook = () => {
+    alert(`You clicked on ${title} by ${author} at Serial number ${index}`);
     getBook(id);
   };
   return (
